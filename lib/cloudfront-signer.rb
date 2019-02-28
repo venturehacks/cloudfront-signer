@@ -227,7 +227,7 @@ module Aws
         end
 
         result.merge 'Signature' => create_signature(policy),
-                     'Key-Pair-Id' => @key_pair_id
+                     'AWSAccessKeyId' => @key_pair_id
       end
 
       private
